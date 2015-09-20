@@ -34,7 +34,7 @@
     "forever": "0.11.1",
     "gridfs-stream": "0.5.3",
     "lodash": "2.4.1",
-    "meanio": "linnovate/meanio",
+    "meanio": "linnovate/meanio#d1a160ce8cfe058c272aeb7b4d969a8ddd2b2876",
     "mongoose": "3.8.24",
     "morgan": "1.5.0",
     "ms": "0.6.2",
