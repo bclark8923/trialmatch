@@ -1,6 +1,5 @@
 'use strict';
 
-angular.module('mean.theme', []);
 angular.module('mean.theme').config(['$meanStateProvider',
   function($meanStateProvider) {
     $meanStateProvider.state('theme example page', {
