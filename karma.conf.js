@@ -42,7 +42,7 @@ module.exports = function(config) {
     },
 
     // web server port
-    port: 9876,
+    port: 8080,
     // Look for server on port 3001 (invoked by mocha) - via @brownman
     proxies: {
       '/': 'http://localhost:3001/'
