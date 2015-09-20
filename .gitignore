@@ -9,6 +9,9 @@ Icon
 .Spotlight-V100
 .Trashes
 
+node_modules/
+bower_components/
+
 # --------------------
 # Eclipse or Nodeclipse "Enide Studio" Files
 # --------------------
