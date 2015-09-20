@@ -1,0 +1,33 @@
+<div class="" data-ng-controller="ClinicaluserController">
+  <div style="text-align:center;">
+    <img class="profileImage" src="/clinicaluser/assets/img/default3.jpg"/>
+  </div>
+  <div class="profileName">
+    {{global.user.name}}
+  </div>
+  <div class="userTable">
+    <div class="table-row" ng-repeat="detail in userDetails">
+      {{detail.key}} <span class="right">{{detail.value}}</span>
+    </div>
+  </div>
+  <div class="profileName">
+    Conditions
+  </div>
+  <div class="conditionsTable">
+    <span class="condition btn btn-primary" ng-repeat="condition in userConditions">
+      {{condition}}
+    </span>
+  </div>
+  <div class="profileName" style="margin-top:70px;">
+    Health Data
+  </div>
+  <div class="userTable">
+    <div class="table-row" ng-repeat="data in userData">
+      {{data.key}} <span class="right">{{data.value}}</span>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:50px;padding-bottom:100px;">
+    <a class="btn btn-primary" style="width:400px;background:transparent;color:#357ebd;" href="/logout">Log Out</a>
+  </div>
+</div>
+

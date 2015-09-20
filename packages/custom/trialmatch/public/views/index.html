@@ -1,0 +1,25 @@
+<div class="" data-ng-controller="TrialmatchController">
+  <h1 class="clinicalHeader">AVAILABLE TRIALS</h1>
+  <input class="form-control" style="margin: 30px 0;" placeholder="SEARCH">
+  <div class="trialTable">
+    <div class="trialRowHead">
+      <div class="col-md-10">Trial</div>
+      <div class="col-md-2">Status</div>
+    </div>
+    <div class="trialRow" ng-repeat="trial in clinicalTrials">
+      <div class="row" style="margin-bottom:25px;">
+      <div class="col-md-10">
+        <h5><a href="#">{{trial.FIELD3}}</a> - Source: <a href="{{trial.FIELD1}}" target="_blank">ClinicalTrials.gov</a></h5>
+        <strong>Conditions:</strong> {{trial.FIELD9}}<br/>
+        <strong>Intervention:</strong> {{trial.FIELD11}}
+      </div>
+      <div class="col-md-2">
+         <span ng-if="trial.FIELD5" class="btn btn-info btn-sm">{{trial.FIELD5}}</span>
+         <span ng-if="trial.FIELD6" class="btn btn-info btn-sm" style="margin-top:5px;">{{trial.FIELD6}}</span>
+      </div>
+    </div>
+      <div ng-if="trial.FIELD3" style="width:100px;margin: 0 auto;border-bottom:1px solid #aaa;margin-bottom:15px;"></div>
+    </div>
+  </div>
+</div>
+
