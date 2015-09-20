@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('mean.users', [])
+angular.module('mean.users')
   .controller('AuthCtrl', ['$scope', '$rootScope', '$http', '$location', 'Global',
     function($scope, $rootScope, $http, $location, Global) {
       // This object will contain list of available social buttons to authorize

@@ -3,7 +3,7 @@ var gulp = require('gulp'),
   path = require('path'),
   _ = require('lodash');
 var plugins = gulpLoadPlugins();
-var defaultTasks = ['clean', 'cssmin', 'uglify', 'prodServe'];
+var defaultTasks = ['clean', 'cssmin', 'prodServe'];
 var assets = require('../config/assets.json');
 
 gulp.task('env:production', function () {
